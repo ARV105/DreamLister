@@ -1,0 +1,621 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		948A78DE1E62AAB0005E883C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948A78DD1E62AAB0005E883C /* AppDelegate.swift */; };
+		948A78E01E62AAB0005E883C /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948A78DF1E62AAB0005E883C /* MainVC.swift */; };
+		948A78E31E62AAB0005E883C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 948A78E11E62AAB0005E883C /* Main.storyboard */; };
+		948A78E61E62AAB0005E883C /* DreamLister.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 948A78E41E62AAB0005E883C /* DreamLister.xcdatamodeld */; };
+		948A78E81E62AAB0005E883C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 948A78E71E62AAB0005E883C /* Assets.xcassets */; };
+		948A78EB1E62AAB0005E883C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 948A78E91E62AAB0005E883C /* LaunchScreen.storyboard */; };
+		948A78F61E62AAB1005E883C /* DreamListerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948A78F51E62AAB1005E883C /* DreamListerTests.swift */; };
+		948A79011E62AAB1005E883C /* DreamListerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948A79001E62AAB1005E883C /* DreamListerUITests.swift */; };
+		948A79381E63E27F005E883C /* Store+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948A79301E63E27F005E883C /* Store+CoreDataClass.swift */; };
+		948A79391E63E27F005E883C /* Store+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948A79311E63E27F005E883C /* Store+CoreDataProperties.swift */; };
+		948A793A1E63E27F005E883C /* Item+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948A79321E63E27F005E883C /* Item+CoreDataClass.swift */; };
+		948A793B1E63E27F005E883C /* Item+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948A79331E63E27F005E883C /* Item+CoreDataProperties.swift */; };
+		948A793C1E63E27F005E883C /* Image+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948A79341E63E27F005E883C /* Image+CoreDataClass.swift */; };
+		948A793D1E63E27F005E883C /* Image+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948A79351E63E27F005E883C /* Image+CoreDataProperties.swift */; };
+		948A793E1E63E27F005E883C /* ItemType+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948A79361E63E27F005E883C /* ItemType+CoreDataClass.swift */; };
+		948A793F1E63E27F005E883C /* ItemType+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948A79371E63E27F005E883C /* ItemType+CoreDataProperties.swift */; };
+		948A79421E64CDD0005E883C /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948A79411E64CDD0005E883C /* MaterialView.swift */; };
+		948A79441E64E535005E883C /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948A79431E64E535005E883C /* ItemCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		948A78F21E62AAB1005E883C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 948A78D21E62AAB0005E883C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 948A78D91E62AAB0005E883C;
+			remoteInfo = DreamLister;
+		};
+		948A78FD1E62AAB1005E883C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 948A78D21E62AAB0005E883C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 948A78D91E62AAB0005E883C;
+			remoteInfo = DreamLister;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		948A78DA1E62AAB0005E883C /* DreamLister.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DreamLister.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		948A78DD1E62AAB0005E883C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		948A78DF1E62AAB0005E883C /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		948A78E21E62AAB0005E883C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		948A78E51E62AAB0005E883C /* DreamLister.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DreamLister.xcdatamodel; sourceTree = "<group>"; };
+		948A78E71E62AAB0005E883C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		948A78EA1E62AAB0005E883C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		948A78EC1E62AAB0005E883C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		948A78F11E62AAB1005E883C /* DreamListerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DreamListerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		948A78F51E62AAB1005E883C /* DreamListerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamListerTests.swift; sourceTree = "<group>"; };
+		948A78F71E62AAB1005E883C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		948A78FC1E62AAB1005E883C /* DreamListerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DreamListerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		948A79001E62AAB1005E883C /* DreamListerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamListerUITests.swift; sourceTree = "<group>"; };
+		948A79021E62AAB1005E883C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		948A79301E63E27F005E883C /* Store+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Store+CoreDataClass.swift"; sourceTree = "<group>"; };
+		948A79311E63E27F005E883C /* Store+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Store+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		948A79321E63E27F005E883C /* Item+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataClass.swift"; sourceTree = "<group>"; };
+		948A79331E63E27F005E883C /* Item+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		948A79341E63E27F005E883C /* Image+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Image+CoreDataClass.swift"; sourceTree = "<group>"; };
+		948A79351E63E27F005E883C /* Image+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Image+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		948A79361E63E27F005E883C /* ItemType+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ItemType+CoreDataClass.swift"; sourceTree = "<group>"; };
+		948A79371E63E27F005E883C /* ItemType+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ItemType+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		948A79411E64CDD0005E883C /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
+		948A79431E64E535005E883C /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		948A78D71E62AAB0005E883C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		948A78EE1E62AAB1005E883C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		948A78F91E62AAB1005E883C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		948A78D11E62AAB0005E883C = {
+			isa = PBXGroup;
+			children = (
+				948A78DC1E62AAB0005E883C /* DreamLister */,
+				948A78F41E62AAB1005E883C /* DreamListerTests */,
+				948A78FF1E62AAB1005E883C /* DreamListerUITests */,
+				948A78DB1E62AAB0005E883C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		948A78DB1E62AAB0005E883C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				948A78DA1E62AAB0005E883C /* DreamLister.app */,
+				948A78F11E62AAB1005E883C /* DreamListerTests.xctest */,
+				948A78FC1E62AAB1005E883C /* DreamListerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		948A78DC1E62AAB0005E883C /* DreamLister */ = {
+			isa = PBXGroup;
+			children = (
+				948A79401E64CDB7005E883C /* View */,
+				948A791E1E63DC1A005E883C /* Model */,
+				948A78DD1E62AAB0005E883C /* AppDelegate.swift */,
+				948A78DF1E62AAB0005E883C /* MainVC.swift */,
+				948A78E11E62AAB0005E883C /* Main.storyboard */,
+				948A78E71E62AAB0005E883C /* Assets.xcassets */,
+				948A78E91E62AAB0005E883C /* LaunchScreen.storyboard */,
+				948A78EC1E62AAB0005E883C /* Info.plist */,
+				948A78E41E62AAB0005E883C /* DreamLister.xcdatamodeld */,
+			);
+			path = DreamLister;
+			sourceTree = "<group>";
+		};
+		948A78F41E62AAB1005E883C /* DreamListerTests */ = {
+			isa = PBXGroup;
+			children = (
+				948A78F51E62AAB1005E883C /* DreamListerTests.swift */,
+				948A78F71E62AAB1005E883C /* Info.plist */,
+			);
+			path = DreamListerTests;
+			sourceTree = "<group>";
+		};
+		948A78FF1E62AAB1005E883C /* DreamListerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				948A79001E62AAB1005E883C /* DreamListerUITests.swift */,
+				948A79021E62AAB1005E883C /* Info.plist */,
+			);
+			path = DreamListerUITests;
+			sourceTree = "<group>";
+		};
+		948A791E1E63DC1A005E883C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				948A79301E63E27F005E883C /* Store+CoreDataClass.swift */,
+				948A79321E63E27F005E883C /* Item+CoreDataClass.swift */,
+				948A79341E63E27F005E883C /* Image+CoreDataClass.swift */,
+				948A79361E63E27F005E883C /* ItemType+CoreDataClass.swift */,
+				948A791F1E63DC22005E883C /* Generated */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		948A791F1E63DC22005E883C /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				948A79311E63E27F005E883C /* Store+CoreDataProperties.swift */,
+				948A79331E63E27F005E883C /* Item+CoreDataProperties.swift */,
+				948A79351E63E27F005E883C /* Image+CoreDataProperties.swift */,
+				948A79371E63E27F005E883C /* ItemType+CoreDataProperties.swift */,
+			);
+			name = Generated;
+			sourceTree = "<group>";
+		};
+		948A79401E64CDB7005E883C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				948A79411E64CDD0005E883C /* MaterialView.swift */,
+				948A79431E64E535005E883C /* ItemCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		948A78D91E62AAB0005E883C /* DreamLister */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 948A79051E62AAB1005E883C /* Build configuration list for PBXNativeTarget "DreamLister" */;
+			buildPhases = (
+				948A78D61E62AAB0005E883C /* Sources */,
+				948A78D71E62AAB0005E883C /* Frameworks */,
+				948A78D81E62AAB0005E883C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DreamLister;
+			productName = DreamLister;
+			productReference = 948A78DA1E62AAB0005E883C /* DreamLister.app */;
+			productType = "com.apple.product-type.application";
+		};
+		948A78F01E62AAB1005E883C /* DreamListerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 948A79081E62AAB1005E883C /* Build configuration list for PBXNativeTarget "DreamListerTests" */;
+			buildPhases = (
+				948A78ED1E62AAB1005E883C /* Sources */,
+				948A78EE1E62AAB1005E883C /* Frameworks */,
+				948A78EF1E62AAB1005E883C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				948A78F31E62AAB1005E883C /* PBXTargetDependency */,
+			);
+			name = DreamListerTests;
+			productName = DreamListerTests;
+			productReference = 948A78F11E62AAB1005E883C /* DreamListerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		948A78FB1E62AAB1005E883C /* DreamListerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 948A790B1E62AAB1005E883C /* Build configuration list for PBXNativeTarget "DreamListerUITests" */;
+			buildPhases = (
+				948A78F81E62AAB1005E883C /* Sources */,
+				948A78F91E62AAB1005E883C /* Frameworks */,
+				948A78FA1E62AAB1005E883C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				948A78FE1E62AAB1005E883C /* PBXTargetDependency */,
+			);
+			name = DreamListerUITests;
+			productName = DreamListerUITests;
+			productReference = 948A78FC1E62AAB1005E883C /* DreamListerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		948A78D21E62AAB0005E883C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Auriel;
+				TargetAttributes = {
+					948A78D91E62AAB0005E883C = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = WNTS7W23K6;
+						ProvisioningStyle = Automatic;
+					};
+					948A78F01E62AAB1005E883C = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = WNTS7W23K6;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 948A78D91E62AAB0005E883C;
+					};
+					948A78FB1E62AAB1005E883C = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = WNTS7W23K6;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 948A78D91E62AAB0005E883C;
+					};
+				};
+			};
+			buildConfigurationList = 948A78D51E62AAB0005E883C /* Build configuration list for PBXProject "DreamLister" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 948A78D11E62AAB0005E883C;
+			productRefGroup = 948A78DB1E62AAB0005E883C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				948A78D91E62AAB0005E883C /* DreamLister */,
+				948A78F01E62AAB1005E883C /* DreamListerTests */,
+				948A78FB1E62AAB1005E883C /* DreamListerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		948A78D81E62AAB0005E883C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				948A78EB1E62AAB0005E883C /* LaunchScreen.storyboard in Resources */,
+				948A78E81E62AAB0005E883C /* Assets.xcassets in Resources */,
+				948A78E31E62AAB0005E883C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		948A78EF1E62AAB1005E883C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		948A78FA1E62AAB1005E883C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		948A78D61E62AAB0005E883C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				948A79441E64E535005E883C /* ItemCell.swift in Sources */,
+				948A793D1E63E27F005E883C /* Image+CoreDataProperties.swift in Sources */,
+				948A793B1E63E27F005E883C /* Item+CoreDataProperties.swift in Sources */,
+				948A793E1E63E27F005E883C /* ItemType+CoreDataClass.swift in Sources */,
+				948A79421E64CDD0005E883C /* MaterialView.swift in Sources */,
+				948A793A1E63E27F005E883C /* Item+CoreDataClass.swift in Sources */,
+				948A79391E63E27F005E883C /* Store+CoreDataProperties.swift in Sources */,
+				948A793C1E63E27F005E883C /* Image+CoreDataClass.swift in Sources */,
+				948A78E01E62AAB0005E883C /* MainVC.swift in Sources */,
+				948A793F1E63E27F005E883C /* ItemType+CoreDataProperties.swift in Sources */,
+				948A79381E63E27F005E883C /* Store+CoreDataClass.swift in Sources */,
+				948A78DE1E62AAB0005E883C /* AppDelegate.swift in Sources */,
+				948A78E61E62AAB0005E883C /* DreamLister.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		948A78ED1E62AAB1005E883C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				948A78F61E62AAB1005E883C /* DreamListerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		948A78F81E62AAB1005E883C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				948A79011E62AAB1005E883C /* DreamListerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		948A78F31E62AAB1005E883C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 948A78D91E62AAB0005E883C /* DreamLister */;
+			targetProxy = 948A78F21E62AAB1005E883C /* PBXContainerItemProxy */;
+		};
+		948A78FE1E62AAB1005E883C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 948A78D91E62AAB0005E883C /* DreamLister */;
+			targetProxy = 948A78FD1E62AAB1005E883C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		948A78E11E62AAB0005E883C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				948A78E21E62AAB0005E883C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		948A78E91E62AAB0005E883C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				948A78EA1E62AAB0005E883C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		948A79031E62AAB1005E883C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		948A79041E62AAB1005E883C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		948A79061E62AAB1005E883C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = WNTS7W23K6;
+				INFOPLIST_FILE = DreamLister/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Sphexis.DreamLister;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		948A79071E62AAB1005E883C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = WNTS7W23K6;
+				INFOPLIST_FILE = DreamLister/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Sphexis.DreamLister;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		948A79091E62AAB1005E883C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = WNTS7W23K6;
+				INFOPLIST_FILE = DreamListerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Sphexis.DreamListerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DreamLister.app/DreamLister";
+			};
+			name = Debug;
+		};
+		948A790A1E62AAB1005E883C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = WNTS7W23K6;
+				INFOPLIST_FILE = DreamListerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Sphexis.DreamListerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DreamLister.app/DreamLister";
+			};
+			name = Release;
+		};
+		948A790C1E62AAB1005E883C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = WNTS7W23K6;
+				INFOPLIST_FILE = DreamListerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Sphexis.DreamListerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = DreamLister;
+			};
+			name = Debug;
+		};
+		948A790D1E62AAB1005E883C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = WNTS7W23K6;
+				INFOPLIST_FILE = DreamListerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Sphexis.DreamListerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = DreamLister;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		948A78D51E62AAB0005E883C /* Build configuration list for PBXProject "DreamLister" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				948A79031E62AAB1005E883C /* Debug */,
+				948A79041E62AAB1005E883C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		948A79051E62AAB1005E883C /* Build configuration list for PBXNativeTarget "DreamLister" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				948A79061E62AAB1005E883C /* Debug */,
+				948A79071E62AAB1005E883C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		948A79081E62AAB1005E883C /* Build configuration list for PBXNativeTarget "DreamListerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				948A79091E62AAB1005E883C /* Debug */,
+				948A790A1E62AAB1005E883C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		948A790B1E62AAB1005E883C /* Build configuration list for PBXNativeTarget "DreamListerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				948A790C1E62AAB1005E883C /* Debug */,
+				948A790D1E62AAB1005E883C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		948A78E41E62AAB0005E883C /* DreamLister.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				948A78E51E62AAB0005E883C /* DreamLister.xcdatamodel */,
+			);
+			currentVersion = 948A78E51E62AAB0005E883C /* DreamLister.xcdatamodel */;
+			path = DreamLister.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 948A78D21E62AAB0005E883C /* Project object */;
+}
