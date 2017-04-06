@@ -20,6 +20,9 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
+        
+        //generateTestData()
+        attemptFetch()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -30,12 +33,32 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
     }
     
     func configureCell(cell: ItemCell, indexPath: NSIndexPath) {
+        let item = controller.object(at: indexPath as IndexPath)
+        cell.configureCell(item: item)
         
-        
+    }
+    
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let objs = controller.fetchedObjects, objs.count > 0 {
+            let item = objs[indexPath.row]
+            performSegue(withIdentifier: "ItemDetailsVC", sender: item)
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ItemDetailsVC" {
+            if let destination = segue.destination as? ItemDetailsVC {
+                if let item = sender as? Item {
+                    destination.itemToEdit = item
+                }
+            }
+        }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if let sections = controller.sections {
+            
             let sectionInfo = sections[section]
             return sectionInfo.numberOfObjects
         }
@@ -50,21 +73,47 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         return 0
     }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 150
+    }
+    
     func attemptFetch() {
+        
         let fetchRequest: NSFetchRequest<Item> = Item.fetchRequest()
-        let dateSort = NSSortDescriptor(key: "Created", ascending: false)
-        fetchRequest.sortDescriptors = [dateSort]
+        let dateSort = NSSortDescriptor(key: "created", ascending: false)
+        let priceSort = NSSortDescriptor(key: "price", ascending: true)
+        let titleSort = NSSortDescriptor(key: "title", ascending: true)
+      
+        
+        if segment.selectedSegmentIndex == 0 {
+            fetchRequest.sortDescriptors = [dateSort]
+        } else if segment.selectedSegmentIndex == 1 {
+            fetchRequest.sortDescriptors = [priceSort]
+        } else if segment.selectedSegmentIndex == 2 {
+            fetchRequest.sortDescriptors = [titleSort]
+        }
         
         let controller = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: context, sectionNameKeyPath: nil, cacheName: nil)
+        
+        self.controller = controller
         
         do {
             
             try self.controller.performFetch()
+            
         } catch {
+            
             let error = error as NSError
             print("\(error)")
+            
         }
         
+    }
+    
+    @IBAction func segmentChange(_ sender: AnyObject) {
+        
+        attemptFetch()
+        tableView.reloadData()
     }
     
     func controllerWillChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
@@ -91,6 +140,7 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
         case.update:
             if let indexPath = indexPath {
                 let cell = tableView.cellForRow(at: indexPath) as! ItemCell
+                configureCell(cell: cell, indexPath: indexPath as NSIndexPath)
             }
             break
         case.move:
@@ -102,5 +152,30 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, NSFe
             }
             break
        }
-   }
+    }
+    
+//    func generateTestData(){
+//        let item = Item(context: context)
+//        item.title = "MacBook Pro"
+//        item.price = 2800
+//        item.details = "MacBook Pro 2017 with 32 GB"
+//        
+//        let item2 = Item(context: context)
+//        item2.title = "Teeth"
+//        item2.price = 2000
+//        item2.details = "Gum pinning will fix gums"
+//        
+//        let item3 = Item(context: context)
+//        item3.title = "Car repair"
+//        item3.price = 550
+//        item3.details = "Shock reabsorpers replacement"
+//        
+//        ad.saveContext()
+//   }
+    
+    
+    
+    
+    
+    
 }

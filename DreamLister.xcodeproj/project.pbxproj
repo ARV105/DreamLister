@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		945AB1721E95B8DF00C78835 /* ItemDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945AB1711E95B8DF00C78835 /* ItemDetailsVC.swift */; };
+		945AB1741E95B99500C78835 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945AB1731E95B99500C78835 /* CustomTextField.swift */; };
 		948A78DE1E62AAB0005E883C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948A78DD1E62AAB0005E883C /* AppDelegate.swift */; };
 		948A78E01E62AAB0005E883C /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 948A78DF1E62AAB0005E883C /* MainVC.swift */; };
 		948A78E31E62AAB0005E883C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 948A78E11E62AAB0005E883C /* Main.storyboard */; };
@@ -45,6 +47,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		945AB1711E95B8DF00C78835 /* ItemDetailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDetailsVC.swift; sourceTree = "<group>"; };
+		945AB1731E95B99500C78835 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		948A78DA1E62AAB0005E883C /* DreamLister.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DreamLister.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		948A78DD1E62AAB0005E883C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		948A78DF1E62AAB0005E883C /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
@@ -96,6 +100,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		944191B51E8EBC6F0002ACC8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				948A78DF1E62AAB0005E883C /* MainVC.swift */,
+				945AB1711E95B8DF00C78835 /* ItemDetailsVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		948A78D11E62AAB0005E883C = {
 			isa = PBXGroup;
 			children = (
@@ -119,10 +132,10 @@
 		948A78DC1E62AAB0005E883C /* DreamLister */ = {
 			isa = PBXGroup;
 			children = (
+				944191B51E8EBC6F0002ACC8 /* Controller */,
 				948A79401E64CDB7005E883C /* View */,
 				948A791E1E63DC1A005E883C /* Model */,
 				948A78DD1E62AAB0005E883C /* AppDelegate.swift */,
-				948A78DF1E62AAB0005E883C /* MainVC.swift */,
 				948A78E11E62AAB0005E883C /* Main.storyboard */,
 				948A78E71E62AAB0005E883C /* Assets.xcassets */,
 				948A78E91E62AAB0005E883C /* LaunchScreen.storyboard */,
@@ -178,6 +191,7 @@
 			children = (
 				948A79411E64CDD0005E883C /* MaterialView.swift */,
 				948A79431E64E535005E883C /* ItemCell.swift */,
+				945AB1731E95B99500C78835 /* CustomTextField.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -250,7 +264,7 @@
 				TargetAttributes = {
 					948A78D91E62AAB0005E883C = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = WNTS7W23K6;
+						DevelopmentTeam = 8N7923E3UN;
 						ProvisioningStyle = Automatic;
 					};
 					948A78F01E62AAB1005E883C = {
@@ -327,11 +341,13 @@
 				948A793A1E63E27F005E883C /* Item+CoreDataClass.swift in Sources */,
 				948A79391E63E27F005E883C /* Store+CoreDataProperties.swift in Sources */,
 				948A793C1E63E27F005E883C /* Image+CoreDataClass.swift in Sources */,
+				945AB1721E95B8DF00C78835 /* ItemDetailsVC.swift in Sources */,
 				948A78E01E62AAB0005E883C /* MainVC.swift in Sources */,
 				948A793F1E63E27F005E883C /* ItemType+CoreDataProperties.swift in Sources */,
 				948A79381E63E27F005E883C /* Store+CoreDataClass.swift in Sources */,
 				948A78DE1E62AAB0005E883C /* AppDelegate.swift in Sources */,
 				948A78E61E62AAB0005E883C /* DreamLister.xcdatamodeld in Sources */,
+				945AB1741E95B99500C78835 /* CustomTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -483,7 +499,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = WNTS7W23K6;
+				CODE_SIGN_IDENTITY = "iPhone Developer: auriel.vilaire@sphexis.com (739C5TPJZ9)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 8N7923E3UN;
 				INFOPLIST_FILE = DreamLister/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Sphexis.DreamLister;
@@ -496,7 +514,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = WNTS7W23K6;
+				CODE_SIGN_IDENTITY = "iPhone Developer: auriel.vilaire@sphexis.com (739C5TPJZ9)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 8N7923E3UN;
 				INFOPLIST_FILE = DreamLister/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Sphexis.DreamLister;
